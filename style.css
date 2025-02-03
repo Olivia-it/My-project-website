@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     font-family: "Poppins", sans-serif;
     color: aliceblue;
     background-image: url(Lightbulb\ numbers.png);
@@ -12,11 +11,12 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: 60px;
     max-width: 1200px;
+    margin-left: 60px;
 }
 
 header {
+    margin: 30px;
     border: 5px solid whitesmoke;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
@@ -28,24 +28,28 @@ header {
 #title{
     margin: 0;
     font-size: 60px; 
-    grid-column: 3/ span 9;
+    grid-column: 2/ span 7;
     padding: 10px;
 }
 
 #name{
     margin: 0;
     font-size: 30px;
-    grid-column: 3/ span 9;
+    grid-column: 2/ span 7;
     padding: 10px;
 }
 
 #contact {
     padding-right: 30px;
     padding-bottom: 40px;
+    justify-content: right;
+    grid-column: 9 / span 4;
 }
 
 #together {
     grid-column: 1/ span 6;
+    margin-left: 60px;
+    gap: 30px;
 }
 
 #bio{
@@ -58,6 +62,7 @@ header {
     margin-bottom: 20px;
     font-weight: 500;
     background-image: linear-gradient(rgb(52, 104, 124), rgb(37, 37, 102), rgb(7, 66, 56),rgb(10, 198, 245));
+    margin: 30px;
 }
 
 
@@ -78,6 +83,7 @@ header {
     border-radius: 10px;
     border: 5px solid whitesmoke;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
+    margin: 30px;
 }
 
 h2 {
@@ -123,8 +129,9 @@ h2 {
 #project {
     display: flex;
     grid-column: span 12;
-    gap: 30px;
+    gap: 40px;
     margin: 20px;
+    justify-content: center;
 } 
 
 
@@ -137,6 +144,7 @@ h2 {
     border-radius: 10px;
     border: 5px solid whitesmoke;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
+    width: 30;
 }
 
 
