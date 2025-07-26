@@ -17,19 +17,25 @@
 <body>
 <header class="grid">
     <p id="title">My Portfolio</p>
-    <p id="name">Olivia Gie</p>
-    <p id="contact">Email:olivia.gie@outlook.com Github:https://github.com/Olivia-it</p>
+    <nav>
+        <a href="#bio">About Me</a>
+        <a href="#skillsDiv">Technical Skills</a>
+        <a href="#projectsDiv">Projects</a>
+    </nav>
+        <p id="name">Olivia Gie</p>
+    <div id="contact">
+        <p>Email: olivia.gie@outlook.com</p> 
+        <p>Github: https://github.com/Olivia-it</p></div>
 </header>
 
 <div class="grid" id="sectionIntro">
 
-<div id="Together">
-    <div id="bio" class="bio">
+<img id="mypic" src="Shoulder stand pic.jpg" alt="">
+<div id="bio" class="bio">
         <h3>About Me: </h3>
-        <p>I have previously worked in different sectors: sales, banking, health care. I have always enjoed working with other people and problem solving, however I always found myself drawn to the software used by the companies. I would learn it throughout and become a go-to person for advice and training. I would have many ideas how to improve it's functionality and make it more user-friendly. That's why I finally decided to strart a creer in software development. i have just completed Level 3 Bootcamp which allowed me to gain good fundamental knowledge of coding. I discovered that coding enables me to combine my creative and problem-solving side I am planning to continue expanding my skills working on new projects. </p>
-    </div>
-    <img id="mypic" src="Shoulder stand pic.jpg" alt="">
+    <p>I have previously worked in different sectors: sales, banking, health care. I have always enjoed working with other people and problem solving, however I always found myself drawn to the software used by the companies. I would learn it throughout and become a go-to person for advice and training. I would have many ideas how to improve it's functionality and make it more user-friendly. That's why I finally decided to strart a creer in software development. i have just completed Level 3 Bootcamp which allowed me to gain good fundamental knowledge of coding. I discovered that coding enables me to combine my creative and problem-solving side I am planning to continue expanding my skills working on new projects. </p>
 </div>
+
 
 <div id="myPassions">
     <h3>Things I Love: </h3>
@@ -45,9 +51,12 @@
 </div>
 </div>
 
+<div class="division"></div>
+
 <div class="grid" id="sectionSkills">
 
 <h2 id="technicalSkills">Technical Skills</h2>
+
 
 <div id="skillsDiv">
     <img alt="python" class="skills" width="48" height="48" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
@@ -64,10 +73,13 @@
 </div>
 </div>
 
+<div class="division"></div>
+
+<!-- section projects -->
 <div class="grid" id="sectionProjects">
 <h2>My Projects</h2>
 
-<div class="grid" id="project">
+<div class="grid project">
     <img class="screenshot" src="Moodybear.png" alt="bear">
     <div class="card">
         <h3>Moodybear</h3>
@@ -78,7 +90,7 @@
     </div>
 </div>
 
-<div class="grid" id="project">
+<div class="grid project">
     <img class="screenshot" src="Calendar with Quotes.png" alt="calendar">
 <div class="card">
         <h3>Calendar</h3>
@@ -89,7 +101,7 @@
     </div>
 </div>
 
-<div class="grid" id="project">
+<div class="grid project">
     <img class="screenshot" id="ecom" src="Screenshot 2025-01-23 132205.png" alt="database">
 <div class="card">
         <h3>E-Commerce Database</h3>
@@ -100,7 +112,28 @@
     </div>
 </div>
 
-<div class="grid" id="project">
+<div class="grid project">
+    <img class="screenshot" src="Asset Database.png" alt="">
+    <div class="card">
+        <h3>Asset Database</h3>
+        <p>I have always been fascinated with databases and how an application can perform searches to provide the best user experience. Working with many different softwares, I have developed ideas on how the best search engine would work. This is a work-in-progress version (not quite finished) of a project I always wanted to create. It can be used for various databases. I organise community theatre projects that involve children, adults, musicians and supporters. Having a database search app will allow me to sort through data effectivly to schedule seperate rehearsals, check people's availability and effectivly plan every step of the project. This project has been quite difficult for me to put together as it requires consolidating different areas of my knowledge and a lot of research on Javascript. However, it has been an exciting and challanging journey.</p>
+        <p class="tu">Tools used: Javascript, HTML, CSS, SQL</p>
+        <a href="https://olivia-it.github.io/SQL-JS-HTML-Database/" target="_blank" rel="noopener noreferrer">GitHub:https://olivia-it.github.io/SQL-JS-HTML-Database/</a>
+    </div>
+</div>
+
+<div class="grid project">
+    <img class="screenshot" src="Falling balls (2).png" alt="">
+    <div class="card">
+        <h3>Draw Falling Balls Animation</h3>
+        <p> The idea for this project came to me when researching relaxing videos. As a neurodivergent person, I understand the need for sensory relaxation. Drowing balls that keep on falling down brings a sense of piece and takes one's mind of other things for a while. I enjoy using it myself and I am planning to make it into an app in the future for other people to enjoy. Working on this project I learnt basic of animation.
+        </p>
+        <p class="tu">Tools used: Javascript, HTML, CSS</p>
+        <a href=" https://olivia-it.github.io/Animation-Draw-Falling-Balls/" target="_blank" rel="noopener noreferrer">GitHub: https://olivia-it.github.io/Animation-Draw-Falling-Balls/</a>
+    </div>
+</div>
+
+<div class="grid project">
     <img class="screenshot" id="ecom" src="Weather app pic.png" alt="weather">
 <div class="card">
         <h3>Weather App</h3>

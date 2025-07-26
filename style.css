@@ -1,3 +1,7 @@
+* {margin: 0;
+    box-sizing: border-box;
+
+}
 body {
     font-family: "Poppins", sans-serif;
     color: aliceblue;
@@ -7,13 +11,13 @@ body {
     background-size: 100% 100%;
     background-color: #5bb3b9;
     justify-content: center;
+    position: relative;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    max-width: 1200px;
-    margin-left: 60px;
+
 }
 
 header {
@@ -22,35 +26,46 @@ header {
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
     /* background-image: linear-gradient(rgb(52, 52, 124), rgb(37, 37, 102), rgb(70, 70, 185), rgb(86, 86, 253)); */
-    grid-column: span 12;
     background-image: linear-gradient(rgb(52, 104, 124), rgb(37, 37, 102), rgb(7, 66, 56),rgb(10, 198, 245));
 }
 
 #title{
-    margin: 0;
+    margin: auto;
     font-size: 60px; 
-    grid-column: 2/ span 7;
     padding: 10px;
+    grid-column: span 6;
+}
+
+
+nav {
+    grid-column: 8 / span 4;
+    margin: auto;
+}
+
+a {
+    color: white;
+    font-size: 16px;
+    margin: 30px;
 }
 
 #name{
-    margin: 0;
+    margin: auto;
     font-size: 30px;
-    grid-column: 2/ span 7;
     padding: 10px;
+    grid-column: span 6;
+
 }
 
 #contact {
-    padding-right: 30px;
-    padding-bottom: 40px;
-    justify-content: right;
-    grid-column: 9 / span 4;
+    grid-column: 8/ span 5;
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
 }
 
-#together {
-    grid-column: 1/ span 6;
-    margin-left: 60px;
-    gap: 30px;
+#sectionIntro {
+    position: relative;
 }
 
 #bio{
@@ -59,16 +74,18 @@ header {
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
     /* background-image: linear-gradient(rgb(52, 52, 124), rgb(37, 37, 102), rgb(70, 70, 185), rgb(86, 86, 253)); */
-    padding: 10px 30px;  
-    margin-bottom: 20px;
+    padding: 80px;  
     font-weight: 500;
     background-image: linear-gradient(rgb(52, 104, 124), rgb(37, 37, 102), rgb(7, 66, 56),rgb(10, 198, 245));
     margin: 30px;
+    font-size: 20px;
+    grid-column: span 7;
+    position: relative;
+    
 }
 
-
 #myPassions {  
-    grid-column: 5 / span 7;
+    grid-column: span 3;
     border: 5px solid whitesmoke;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
@@ -76,6 +93,10 @@ header {
     padding: 10px 30px; 
     font-weight: 500;
     background-image: linear-gradient(rgb(52, 104, 124), rgb(37, 37, 102), rgb(7, 66, 56),rgb(10, 198, 245));
+    position: inherit;
+    left: 200px;
+    top: -150px;
+    font-size: 15px;
 }
 
 #mypic {
@@ -85,6 +106,7 @@ header {
     border: 5px solid whitesmoke;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
     margin: 30px;
+    grid-column: span 5;
 }
 
 h2 {
@@ -93,7 +115,7 @@ h2 {
     font-size: 3.5rem;
     box-shadow: 5px 5px #57626d, 5px 5px pink;
     border-radius: 10px;
-    background-color: rgba(252, 252, 252, 0.7);
+    padding: 20px;
 }
 
 #list {
@@ -102,32 +124,31 @@ h2 {
 
 .skills{
     background-color: white;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 5px;
     box-shadow: #57626d 5px 5px;
+
 }
 
-.skills:hover, #bio:hover, #myPassions:hover, img:hover, .card:hover{
-    transform: scale(1.2);
-}
 
 #skillsDiv {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap; 
     justify-content: center;
     border: 5px solid whitesmoke;
-    grid-column: 3 / span 8;
+    grid-column: 4 / span 6;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
     /* background-image: linear-gradient(rgb(52, 52, 124), rgb(37, 37, 102), rgb(70, 70, 185), rgb(86, 86, 253)); */
-    padding: 40px;
+    padding: 70px;
     background-image: linear-gradient(rgb(52, 104, 124), rgb(37, 37, 102), rgb(7, 66, 56),rgb(10, 198, 245));
+    margin: 40px auto;
 }
 
 
-#project {
+.project {
     display: flex;
     grid-column: span 12;
     gap: 40px;
@@ -140,32 +161,45 @@ h2 {
     background-color: rgba(219, 233, 245, 0.9);
     color: rgb(10, 10, 41);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     font-weight: 400;
     border-radius: 10px;
     border: 5px solid whitesmoke;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
-    width: 30;
+    margin-top: 100px;
+    width: 700px;
+    height: 400px;
+    align-content: center;
+
 }
 
 
 .screenshot {
     border: 5px black solid;
-    width: 500px;
     border-radius: 10px;
     border: 5px solid whitesmoke;
     box-shadow: 5px 5px rgba(0, 0, 0, .3), 5px 5px pink;
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;
+    object-fit: fill;
+    
+
 }
 
 .tu {
     background-color: yellowgreen;
 }
 
-.cont {
+/* .cont {
     object-fit: contain;
     background-color: rgb(226, 168, 61);
 }
 
 #ecom {
     width: 100rem;;
+} */
+
+.division {
+    border: rgb(88, 75, 75) solid 15px;
 }
